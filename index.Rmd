@@ -16,7 +16,9 @@ output:
 ```{r, echo=FALSE}
 library(leaflet)
 leaflet() %>%
-  addProviderTiles("Thunderforest.SpinalMap")
+  addTiles() %>% 
+    addMarkers(lng =  -76.620278 , lat = 39.328889, 
+               popup = "	Johns Hopkins University")
 ```
 
 
