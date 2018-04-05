@@ -1,24 +1,16 @@
 ---
-title: "Week 2 Presentation"
-author: Emrick
-date: April 3, 2018
-output: 
-    revealjs::revealjs_presentation:
-        theme: league
-        highlight: pygments
-        center: true
-        self_contained: true
-        transition: fade
+title: "Week 2 presentation"
+output: ioslides_presentation
 ---
 
-## Leaflet Map
+## John Hopskin Unversity
+
+**Date: April 4, 2018**
 
 ```{r, echo=FALSE}
 library(leaflet)
 leaflet() %>%
   addTiles() %>% 
     addMarkers(lng =  -76.620278 , lat = 39.328889, 
-               popup = "	Johns Hopkins University")
+               popup = "Johns Hopkins University")
 ```
-
-
