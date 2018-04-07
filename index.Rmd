@@ -1,16 +1,29 @@
 ---
-title: "Week 2 presentation"
-output: ioslides_presentation
+title: "Week 3 presentation"
+output: 
+    revealjs::revealjs_presentation:
+        theme: league
+        center: true
+        transition: fade
 ---
 
-## John Hopskin Unversity
+## Density of weight, w.r.t number of cylinders
 
 **Date: April 4, 2018**
 
 ```{r, echo=FALSE}
-library(leaflet)
-leaflet() %>%
-  addTiles() %>% 
-    addMarkers(lng =  -76.620278 , lat = 39.328889, 
-               popup = "Johns Hopkins University")
+suppressPackageStartupMessages(library(plotly))
+suppressPackageStartupMessages(library(ggplot2))
+
+g <- ggplot(mtcars, aes(wt, fill = factor(cyl), 
+                   col = factor(cyl))) + 
+    geom_density(alpha = 0.8) + scale_fill_discrete(name = "#cylinder") +
+    scale_color_discrete(name = "col", guide = F) + 
+    labs(title = "Density of weight, w.r.t number of cylinders", x = "Weight", y = "Density") + 
+    theme(plot.title = element_text(size = 15,
+                                    color = "tomato", 
+                                    face = "bold"))
+gp <- purrr::quietly(ggplotly)
+res <- gp(g)
+res$result
 ```
