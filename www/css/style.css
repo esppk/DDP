@@ -1,0 +1,53 @@
+/* html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+#doc{
+  margin-top: 100px;
+  margin-bottom: 400px;
+  display: none;
+  border: 1px solid green;
+  opacity: 0;
+  transition: all 2s;
+  padding: 10px;
+
+  
+}
+#plot{
+  border: 1px solid gray;
+  box-shadow: 2px 0 4px #777;
+  min-width: 480px;
+  min-height: 400px;
+}
+
+body .heading{
+  font-family: 'Righteous', cursive;
+
+}
+
+.show{
+  display: block !important;
+  opacity: 100 !important;
+}
+
+.til{
+  font-size: 1.1rem; 
+  font-weight: 900;
+  text-align: center;
+}
+h2{
+  color: green;
+  padding: 10px;
+  border-bottom: 2px solid gray;
+  box-shadow: 0px 6px 6px green;
+}
+
+.doctil{
+  text-align: center;
+  font-family: Righteous;
+  color: green;
+  border-bottom: 2px solid tomato;
+}
+li{
+  font-size: 1.3rem;
+}
+
