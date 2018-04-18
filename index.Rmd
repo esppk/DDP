@@ -26,14 +26,13 @@ output:
 - Popup quickStart feature
 ![](3.png)
 
-## Code 
+## Equavelant code
 
 
 ```{r, echo=FALSE}
 suppressPackageStartupMessages(library(ggplot2))
 ```
 
-Equavelant code.
 
 ```{r, height = 480}
 ggplot(mtcars, aes(mpg, wt, col = factor(cyl))) + 
